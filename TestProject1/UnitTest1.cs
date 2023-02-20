@@ -82,19 +82,19 @@ namespace TestProject1
         }
 
         [TestMethod]
-        public void GetVINCountry_NotCorrectlyVin3()
+        public void GetVINCountryUnCorrectlyVin3()
         {
             Assert.IsNotNull(Class1.GetVINCountry("123123123123123123123"));
         }
 
         [TestMethod]
-        public void CheckVINSetEmptySpase4()
+        public void CheckVINSetEmpty4()
         {
             Assert.ThrowsException<AssertFailedException>(() => Assert.ThrowsException<SystemException>(() => Class1.CheckVIN(null)));
         }
 
         [TestMethod]
-        public void GetVINCountrySetEmptySpase5()
+        public void GetVINCountrySetEmpty5()
         {
             Assert.ThrowsException<AssertFailedException>(() => Assert.ThrowsException<SystemException>(() => Class1.GetVINCountry(null)));
         }
